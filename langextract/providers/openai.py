@@ -107,6 +107,7 @@ class OpenAILanguageModel(base_model.BaseLanguageModel):
         api_key=self.api_key,
         base_url=self.base_url,
         organization=self.organization,
+        timeout=1,
     )
 
     super().__init__(
